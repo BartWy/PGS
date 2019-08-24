@@ -4,6 +4,6 @@
 
         myApp.controller('skiCamsController', function ($scope) {
 console.log('skiCamsController')
-            }
+            })
 
         })()
