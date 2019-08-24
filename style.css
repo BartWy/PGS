@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif
+}
+
+header {
+    
+    height: 20%;
+    
+}
+
+section {
+     height: 60%;
+    
+}
+
+footer {
+  height: 20%;
+    background-color: black;
+}
