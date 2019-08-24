@@ -1,11 +1,22 @@
+let myApp = angular.module('myApp', ['ngRoute'])
+
+
 console.log('oooooo')
-//let myApp = angular.module('myApp', [])
-
-
-import {mainController} from 'controllers/mainController.js';
-console.log({mainController})
-
-
+import {
+    mainController
+} from '/controllers/mainController.js';
+console.log({
+    mainController
+})
+import {
+    appService
+} from '/js/appService.js'
+angular.module('ng').filter('tel', function () {});
+//let myApp = angular.module('myApp', ['ngRoute'])
 console.log(1)
-angular.module('myApp', [])
-    .controller('mainController', mainController);
+    (function () {
+        angular.module('myApp', ['ngRoute'])
+            .controller('mainController', mainController)
+            .service('appService', appService);
+
+    })();
