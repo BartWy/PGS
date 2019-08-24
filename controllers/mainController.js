@@ -1,15 +1,17 @@
-import {
-    appService
-} from './js/appService.js'
 
 export class mainController {
     constructor(appService) {
-        console.log(1)
-        this.appService = appService;
-        
-       this.photo = appService.getPhoto()
-        
+        this.appService = appService
+        this.init()
     }
-
+    
+init(){
+    console.log(3333)
+    this.appService.getPhoto()
 }
-mainController.$inject = ['appService'];
+}
+
+mainController.$inject = ["appService"]
+
+
+//appService.getPhoto()
